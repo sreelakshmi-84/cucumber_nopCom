@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="14.579185">
+<testcase classname="MyAccount-Login" name="user should be able to login successfully" time="5.150656">
+<system-out><![CDATA[Given user is on home page..................................................passed
+When user click on login....................................................passed
+And Enter registered "lellasreelakshmi@gmail.com" and "Aanya@2020"..........passed
+And user click on login button..............................................passed
+Then user must be able to login the web page................................passed
+And user logout from the application........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="MyAccount-Login" name="Log-in with invalid username and password" time="1.633895">
+<system-out><![CDATA[Given user is on home page..................................................passed
+When user click on login....................................................passed
+And Enter invalid username and password.....................................passed
+And user click on login button..............................................passed
+Then user must not login to the web page....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Registration" name="User Registration with personal details" time="5.330906">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at regression.registration.userSuccessfullyRegisteredToTheApplication(registration.java:57)&#13;&#10;&#9;at ✽.Then user successfully registered to the application(regression/registration.feature:12)&#13;&#10;"><![CDATA[Given user is on registration page..........................................passed
+When user click on registration.............................................passed
+And Enter Firstname "Sree" and Lastname "Lella".............................passed
+And select DOB date "20" and month "10" and year "1985".....................passed
+And Enter Email address "lellasreelakshmi@gmail.com" and Company name "freelance".passed
+And Enter Password "Aanya@2020" and Confirm Password "Aanya@2020"...........passed
+And user click registration button..........................................passed
+Then user successfully registered to the application........................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at regression.registration.userSuccessfullyRegisteredToTheApplication(registration.java:57)
+	at ✽.Then user successfully registered to the application(regression/registration.feature:12)
+]]></failure>
+</testcase>
+<testcase classname="User Registration" name="User Registration with  invalid personal details" time="2.365194">
+<system-out><![CDATA[Given user is on registration page..........................................passed
+When user click on registration.............................................passed
+And Enter Firstname "sree" and Lastname "Lella".............................passed
+And select DOB date "20" and month "10" and year "1985".....................passed
+And Enter Email address "yashwantrsunkara@gmail.com" and Company name "freelance".passed
+And Enter Password "Aanya@2020" and Confirm Password "Aanya2021"............passed
+And user click registration button..........................................passed
+Then user must not registered to the application............................passed
+]]></system-out>
+</testcase>
+<testcase classname="search products feature" name="keyword search from home page" time="0.098534">
+<system-out><![CDATA[Given I am on landing page..................................................passed
+When I search with keyword..................................................passed
+Then I should see atleast one search........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

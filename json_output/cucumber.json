@@ -1,0 +1,606 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "user should be able to login successfully",
+        "description": "",
+        "id": "myaccount-login;user-should-be-able-to-login-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 156562200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on home page",
+            "match": {
+              "location": "loginFunction.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1334640600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click on login",
+            "match": {
+              "location": "loginFunction.userClickOnLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 516879000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter registered \"lellasreelakshmi@gmail.com\" and \"Aanya@2020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lellasreelakshmi@gmail.com",
+                  "offset": 18
+                },
+                {
+                  "val": "Aanya@2020",
+                  "offset": 51
+                }
+              ],
+              "location": "loginFunction.enterRegisteredAnd(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2225493500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click on login button",
+            "match": {
+              "location": "loginFunction.userClickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 108580300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user must be able to login the web page",
+            "match": {
+              "location": "loginFunction.userMustBeAbleToLoginTheWebPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 808500400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user logout from the application",
+            "match": {
+              "location": "loginFunction.userLogoutFromTheApplication()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Log-in with invalid username and password",
+        "description": "",
+        "id": "myaccount-login;log-in-with-invalid-username-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 893500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user is on home page",
+            "match": {
+              "location": "loginFunction.userIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 548681400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user click on login",
+            "match": {
+              "location": "loginFunction.userClickOnLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 376719800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Enter invalid username and password",
+            "match": {
+              "location": "loginFunction.enterInvalidUsernameAndPassword(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "lellasreelakshmi@gmail.com",
+                  "Aanya@201"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "rsunkara@gmail.com",
+                  "Nani@2020"
+                ],
+                "line": 19
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 541052300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user click on login button",
+            "match": {
+              "location": "loginFunction.userClickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 166548500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user must not login to the web page",
+            "match": {
+              "location": "loginFunction.userMustNotLoginToTheWebPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "MyAccount-Login",
+    "description": "Description: This feature will test a login functionality",
+    "id": "myaccount-login",
+    "keyword": "Feature",
+    "uri": "regression/loginFunction.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User Registration with personal details",
+        "description": "",
+        "id": "user-registration;user-registration-with-personal-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1355549200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on registration page",
+            "match": {
+              "location": "registration.userIsOnRegistrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1279742800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click on registration",
+            "match": {
+              "location": "registration.userClickOnRegistration()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 274220400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter Firstname \"Sree\" and Lastname \"Lella\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sree",
+                  "offset": 17
+                },
+                {
+                  "val": "Lella",
+                  "offset": 37
+                }
+              ],
+              "location": "registration.enterFirstnameAndLastname(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 328992000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "select DOB date \"20\" and month \"10\" and year \"1985\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20",
+                  "offset": 17
+                },
+                {
+                  "val": "10",
+                  "offset": 32
+                },
+                {
+                  "val": "1985",
+                  "offset": 46
+                }
+              ],
+              "location": "registration.selectDOBDateAndMonthAndYear(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 317244200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Enter Email address \"lellasreelakshmi@gmail.com\" and Company name \"freelance\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lellasreelakshmi@gmail.com",
+                  "offset": 21
+                },
+                {
+                  "val": "freelance",
+                  "offset": 67
+                }
+              ],
+              "location": "registration.enterEmailAddressAndCompanyName(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 216395400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Enter Password \"Aanya@2020\" and Confirm Password \"Aanya@2020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Aanya@2020",
+                  "offset": 16
+                },
+                {
+                  "val": "Aanya@2020",
+                  "offset": 50
+                }
+              ],
+              "location": "registration.enterPasswordAndConfirmPassword(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1289950800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user click registration button",
+            "match": {
+              "location": "registration.userClickRegistrationButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 268811300,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat regression.registration.userSuccessfullyRegisteredToTheApplication(registration.java:57)\r\n\tat ✽.Then user successfully registered to the application(regression/registration.feature:12)\r\n",
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "user successfully registered to the application",
+            "match": {
+              "location": "registration.userSuccessfullyRegisteredToTheApplication()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@RegTest"
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "User Registration with  invalid personal details",
+        "description": "",
+        "id": "user-registration;user-registration-with--invalid-personal-details;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 460056800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user is on registration page",
+            "match": {
+              "location": "registration.userIsOnRegistrationPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 494684900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user click on registration",
+            "match": {
+              "location": "registration.userClickOnRegistration()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 236010100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Enter Firstname \"sree\" and Lastname \"Lella\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sree",
+                  "offset": 17
+                },
+                {
+                  "val": "Lella",
+                  "offset": 37
+                }
+              ],
+              "location": "registration.enterFirstnameAndLastname(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 312948200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "select DOB date \"20\" and month \"10\" and year \"1985\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20",
+                  "offset": 17
+                },
+                {
+                  "val": "10",
+                  "offset": 32
+                },
+                {
+                  "val": "1985",
+                  "offset": 46
+                }
+              ],
+              "location": "registration.selectDOBDateAndMonthAndYear(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 286885400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Enter Email address \"yashwantrsunkara@gmail.com\" and Company name \"freelance\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "yashwantrsunkara@gmail.com",
+                  "offset": 21
+                },
+                {
+                  "val": "freelance",
+                  "offset": 67
+                }
+              ],
+              "location": "registration.enterEmailAddressAndCompanyName(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 205278400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Enter Password \"Aanya@2020\" and Confirm Password \"Aanya2021\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Aanya@2020",
+                  "offset": 16
+                },
+                {
+                  "val": "Aanya2021",
+                  "offset": 50
+                }
+              ],
+              "location": "registration.enterPasswordAndConfirmPassword(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89175400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user click registration button",
+            "match": {
+              "location": "registration.userClickRegistrationButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 280155200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user must not registered to the application",
+            "match": {
+              "location": "registration.userMustNotRegisteredToTheApplication()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@RegTest"
+          }
+        ]
+      }
+    ],
+    "name": "User Registration",
+    "description": "Description:This feature test a Registration functionality",
+    "id": "user-registration",
+    "keyword": "Feature",
+    "uri": "regression/registration.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "keyword search from home page",
+        "description": "",
+        "id": "search-products-feature;keyword-search-from-home-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1872200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on landing page",
+            "match": {
+              "location": "search.i_am_on_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 96629200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I search with keyword",
+            "match": {
+              "location": "search.iSearchWithKeyword(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "keyword"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "computer"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see atleast one search",
+            "match": {
+              "location": "search.iShouldSeeAtleastOneSearch()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@search"
+          }
+        ]
+      }
+    ],
+    "name": "search products feature",
+    "description": "",
+    "id": "search-products-feature",
+    "keyword": "Feature",
+    "uri": "regression/search.feature"
+  }
+]
